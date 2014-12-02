@@ -1,0 +1,37 @@
+Sub TEST()
+Str1 = ""
+trigger = 0
+
+While True
+    k = Left(ActiveCell.Text, 4)
+    
+    If k = "" Then
+    Exit Sub
+    End If
+    
+    If trigger = 2 Then
+        ActiveCell.End(xlUp).End(xlUp).Offset(0, 1) = Str1
+        ActiveCell.Offset(-1, 0).Select
+        Exit Sub
+    End If
+   
+    If IsNumeric(k) Then
+        If k <> 1206 Then
+         ActiveCell.Offset(1, 0).Select
+         trigger = trigger + 1
+        Else
+            Str1 = Str1 + ActiveCell.Text
+            ActiveCell.Value = ""
+            ActiveCell.Offset(1, 0).Select
+        End If
+    Else
+            Str1 = Str1 + ActiveCell.Text
+            ActiveCell.Value = ""
+            ActiveCell.Offset(1, 0).Select
+    
+    
+    End If
+    Wend
+
+
+End Sub
