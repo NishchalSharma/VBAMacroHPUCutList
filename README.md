@@ -19,8 +19,8 @@ How To Use this ?
 6. Assign a shorcut to this new macro. (I usually place Ctrl+j)
 7. Run it
 8. Enjoy
-9. 
-Sample List ?
-=============
+
+Sample List?
+============
 
 [Sample Cut List](https://drive.google.com/file/d/0Bxw2QhTtSdxUT1h3aHFmVHNlSlIyNEEyUUdwNGZMTmZaaFZv/view?usp=sharing)
